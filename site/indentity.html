@@ -3,8 +3,109 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Headings</title>
+	<style >
+		p {
+			color: blue;
+			font-size: 20px;
+			width: 1200px;
+
+			text-align: center;
+		}
+
+		h1{
+			color: red;
+			font-size: 40px;
+			width: 1200px;
+			text-align: center;
+
+		}
+
+		a , div {
+			color: green;
+			font-size: 40px;
+		}
+
+		.highlight {
+			color: green;
+			font-size: 70px;
+			width: 1200px;
+			text-align: left;
+			font-weight: bold;
+			font-style: italic;
+			opacity: .9;
+
+		}
+
+		#h2{
+			color:green;
+			font-size: 50px;
+			width: 1200px;
+			text-align: left;
+			font-weight: bolder;
+			font-style: italic;
+			opacity: .9;
+			background-color: red;
+		}
+
+		p.big {
+			color: grey;
+		}
+
+		article > p{
+			color: black;
+		}
+
+		section li{
+			color: red;
+		}
+
+		.hglt p{
+			color: black;
+		}
+
+		artcle .hglt{
+			color: red;
+		}
+	</style>
 </head>
 <body>
+
+	<p id="big">
+		this is big class with p tag
+	</p>
+
+	<article>
+		<p>
+			this is direct p tag inside article tag
+		</p>
+	</article>
+
+	<article>
+		<div>
+			<p>
+				this is not a direct p tag inside article tag
+			</p>
+		</div>
+	</article>
+
+	<p class="hglt">
+		this is p tag with hglt class
+	</p>
+
+	<article class="hglt">
+		this class hglt in a article tag
+	</article>
+
+
+	<h3>
+		<p id="h2">
+			my name is khan , i like dhan ! , is not funny ?
+		</p>
+
+		<p class="highlight">
+			No ! , this is not funny .
+		</p>
+	</h3>
 	<header> Failure is the key to succcess </header>
 	<nav>this is just for navigation </nav>
 
