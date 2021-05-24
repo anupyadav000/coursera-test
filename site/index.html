@@ -1,9 +1,368 @@
+
 <!DOCTYPE html>
 <html>
+
+
 <head>
-	<title> Hello Coursera !</title>
+	<meta charset="utf-8">
+	<title>My Village</title>
+
+	<!-- External Styling Explained -->
+	<link rel="stylesheet" type="text/css" href="externalStyle.css">
+	<style>
+
+		
+		h1{
+			color: red;
+			font-size: 50px;
+			width: 1000px;
+			text-align: center;
+		}
+
+		<-- 
+		p,h1{
+			color: red;
+			font-size: 50px;
+			width: 1000px;
+			text-align: center;
+		}
+
+		-->
+
+		.blue{
+			color: blue;
+			font-size: 35px;
+			width: 700px;
+			font-style: italic;
+			text-align: center;
+			background: orange;
+		}
+
+		#red{
+			color: red;
+			font-size: 70px;
+			width: 800px;
+			text-align: center;
+			background: orange;
+		}
+
+		<!-- grouping selector-->
+
+		div , .orange{
+			color: orange;
+		}
+
+
+		<-- element with class selector -->
+
+		p.big {
+			font-size: 10px;
+			color: green;
+		}
+
+		<!-- child selector (Direct Child) (p is child) -->
+
+		article > p {
+			font-size: 15px;
+			color: grey;
+		}
+
+		article > .colored {
+			color: blue;
+		}
+
+		<!-- child selector (Any level child) (p is child) -->
+
+		article p {
+			font-size: 30px;
+			color: red;
+		}
+
+		.colored p{
+			color: blue;
+		}
+
+		<!-- Multiple Class applied to One Element -->
+
+		.main .high{
+			color: green;
+			width : 1000px;
+			background: black;
+		}
+
+		<!-- Psuedo Class Selector -->  
+
+		header a {
+			list-style: none;
+		}
+
+		a:link, a:visited{
+			text-decoration: none;
+			background: green;
+			border: 1px solid black;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 2px;
+		}
+
+		a:hover, a:active{
+			background: red;
+			color: purple;
+		}
+
+		header li:nth-child(2){
+			font-size: 60px;
+		}
+
+		section  div:nth-child(odd) {
+			background: grey;
+		}
+
+		section div:nth-child(3):hover {
+			background: red;
+			cursor: pointer;
+		}
+
+
+	</style>
+
 </head>
+
+
+
+
+
+
 <body>
-<h1> Hey Anup Yadav ! , I am great if  dfkdmfd </h1>
+	<h1 style="color: blue; font-size: 50px ; text-align: center;">There are around 100 families in my village.</h1>
+	<p style="color: red ; font-size: 20px ; text-align: center;">My village is very beautiful.</p>
+    
+
+    
+    <p >It's external way</p>
+
+
+     <p style="text-align: center;"> I am centered there. </p>
+
+
+    <section>
+    	<div>div1</div>
+    	<div>div2</div>
+    	<div>div3</div>
+    	<div>div4</div>
+    	<div>div5</div>
+    </section>
+
+
+
+    <header>
+    	<ul>
+    		<li>
+    			<a href="https://www.facebook.com/profile.php?id=100029010091581" target="_blank" title="get info about anup">Link to facbook page of Anup Yadav</a>
+    		</li>
+    		<br>
+    		<li>
+    			<a href="https://home.iitd.ac.in/" title="to iitd site"> link to iitd official website</a>
+    		</li>
+    	</ul>
+    </header>
+    
+
+
+    <p class="blue">I have class selector</p>
+    <p id="red"> I have id selector</p>
+    <div class="blue"> It's class selector </div>
+    <div id="red"> It's id selector </div>
+    <div class="orange">I am happy !</div>
+
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Solar_system.jpg" width="1000px" height="600px" align="center">
+  
+
+
+    <h1 id="top">Important Links</h1>
+    <section>
+    	<ul>
+    		<li><a href="#section1"> section1 </a></li>
+    		<li><a href="#section2"> section2 </a></li>
+    		<li><a href="#section3"> section3 </a></li>
+
+    	</ul>
+    </section>
+
+    <!--
+    <section>
+    	<p>Its the link to my facbook id page:
+    		<a href="https://www.facebook.com/profile.php?id=100029010091581" target="_blank" title="get info about anup">Link to facbook page of Anup Yadav</a>
+    	</p>
+    </section>
+    <a href="https://home.iitd.ac.in/" title="to iitd site"> link to iitd official website</a>
+
+-->
+    <br>
+
+
+
+
+    <a href="https://home.iitd.ac.in/" title="="to get iitd info > link to get information about IIT-D</a>
+    
+
+
+
+
+    <h1> Do not afraid to be &lt; than 100% &amp; &gt 90% . </h1>
+
+
+
+    <p> &quot;
+    	life is long road 
+    	&nbsp;
+    	which is need to passed with joy and happiness. There is no god exist and we need to do hard work to achieve something.
+    	&nbsp;
+
+    &quot;
+     </p>
+
+
+
+
+
+    <br>
+    <div>Unordered list</div>
+    <ul>
+    	tibba , johd , goon , tanki , chokdi
+    </ul>
+
+    <section id="section3">
+		<h3>section3</h3>
+		<p> China has bad politics. </p>
+	</section>
+
+    <ul>
+    	<li>tibba</li>
+    	<li>jhod</li>
+    	<li>tanki</li>
+    	<li>goon</li>
+    	<li>chokdi</li>
+    </ul>
+
+    <ul>
+    	<li>tibba</li>
+    	<li>
+    		Water areas:
+    		<ul>
+    		<li>goon</li>
+    		<li>tanki</li>
+    		<li>johd</li>
+    	    </ul> 
+    	</li>
+    	<li>chokdi</li>
+    </ul>
+    <br>
+    <div>Ordered list</div>
+    <ol>
+    	tibba , johd , goon , tanki , chokdi
+    </ol>
+
+    <ol>
+    	<li>tibba</li>
+    	<li>jhod</li>
+    	<li>tanki</li>
+    	<li>goon</li>
+    	<li>chokdi</li>
+    </ol>
+
+    <ol>
+    	<li>tibba</li>
+    	<li>Water areas: <ul>
+    		<li>goon</li>
+    		<li>tanki</li>
+    		<li>johd</li> 		
+    	</ul>
+   
+    	</li>
+    	<li>chokdi</li>
+    </ol>
+
+
+
+
+    <section id="section2">
+		<h3>section2</h3>
+		<p> Pakisthan  is the Islamic country. </p>
+	</section>
+
+	<header>It has pics of village and map picture <nav>
+		It's for navigation to reach to my village.
+	</nav>
+    </header>
+    <br>
+    <section>
+    	section 1
+    		<article>
+    			I am lovely .
+    		</article>
+    		<article>
+    			You are lovely.
+    		</article>
+    </section>
+    <section>
+    	section 2
+    		<article>
+    			My village is lovely .
+    		</article>
+    		<article>
+    			My villagers are lovely.
+    		</article>
+    </section>
+
+    <article>
+    	I am very simple and <section>
+    		very hard working.
+    	</section>
+    </article>
+
+	<h1>It's h1.</h1>
+	<h2>It's h2.</h2>
+	<h3>It's h3.</h3>
+
+	<div>**I am happy in my village.</div>
+	<span>***It has large diversity.</span>
+	<div>
+		****It is near thatwari <span> with scattered manner
+		</span> in rajasthan
+	</div>
+
+
+
+
+
+	<section id="section1">
+		<h3>section1</h3>
+		<p> Delhi is the capital of India. </p>
+	</section>
+
+
+	<section>
+		<p> <a href="#top">Link to the top </a>
+		</p>
+	</section>
+
+
+
+
+	<footer>
+		<hr>
+		<br>
+		<p style="text-align: center; " onclick="alert('please not make us bother');">if queries, Contact: anupyadav20177@gmai.com </p>
+	</footer>
+
+
+
+	<footer>
+		&copy; copyright @ Villagers of Mukandpura
+	</footer>
 </body>
 </html>
