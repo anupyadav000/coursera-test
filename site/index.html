@@ -124,6 +124,54 @@
 			background: red;
 			cursor: pointer;
 		}
+        
+
+        <!-- entire body tag assign for inheitance
+
+		body{
+			color: blue;
+			text-align: center;
+			font-family: Helvetica;
+		}
+
+		-->
+
+		<!-- we have learnt , Simple rule , merging rule , Inheritance for cascating styles -->
+
+		<!-- Specificity explained -->
+
+		header .high p{
+			color: red;
+		}
+
+		p .high{
+			color: blue;
+		}
+
+		p{
+			color: green !Important;
+		}
+
+
+        <!-- It's absolute font-size -->
+
+		.style{
+			font-family: arial , Helvetica , sans-serif;
+			color: #00ff00;
+			font-weight: bold;
+			font-style: italic;
+			font-size: 24px ; <!-- 16px - default size -->
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		<!-- It's about relative font-size -->
+
+		div{
+			font-size: 120%;
+		}
+
+
 
 
 	</style>
@@ -138,10 +186,33 @@
 <body>
 	<h1 style="color: blue; font-size: 50px ; text-align: center;">There are around 100 families in my village.</h1>
 	<p style="color: red ; font-size: 20px ; text-align: center;">My village is very beautiful.</p>
-    
+    <br>
+
+
+
+
+
+
+    <div>It's new one.</div>
+    <br>
+    <div>It's realative.
+    	<div style="font-size: 2em">
+    		It's inner1 (It's 2em).
+    		<div style="font-size: 2em">
+    			It's inner 2 (It's 4em).
+    			<div style="font-size: .5em">
+    				It's inner 3 (It's 2em again).
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
 
     
     <p >It's external way</p>
+
+
+    <p class="style">I am class style paragraph , look at me. </p>
 
 
      <p style="text-align: center;"> I am centered there. </p>
